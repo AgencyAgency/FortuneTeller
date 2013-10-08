@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="S0F-qe-RoS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="AAViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vi-vX-bVU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="Ahd-Jq-t2N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tell me my fortune.">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LpI-fd-uk1" kind="push" id="cV2-Tj-qQV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7vi-vX-bVU" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9kT-aL-efb"/>
+                            <constraint firstAttribute="trailing" secondItem="7vi-vX-bVU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9om-hP-xFc"/>
+                            <constraint firstItem="7vi-vX-bVU" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="aYL-rY-vc7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="di1-HX-lTm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="-238"/>
+        </scene>
+        <!--FortuneVC-->
+        <scene sceneID="84f-HR-fc6">
+            <objects>
+                <viewController id="LpI-fd-uk1" customClass="AAFortuneVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rel-6s-GQo">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This is your fortune..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuZ-ww-HXO">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="OZ8-QZ-Bj7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fortune goes here." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub2-VY-gdC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="itR-LK-Mk4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ub2-VY-gdC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FtG-wF-h1l"/>
+                            <constraint firstItem="ub2-VY-gdC" firstAttribute="leading" secondItem="Rel-6s-GQo" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KER-Tv-QxZ"/>
+                            <constraint firstAttribute="trailing" secondItem="xuZ-ww-HXO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LfD-cp-HBY"/>
+                            <constraint firstItem="xuZ-ww-HXO" firstAttribute="top" secondItem="Rel-6s-GQo" secondAttribute="top" constant="20" symbolic="YES" type="default" id="iUb-4V-aQt"/>
+                            <constraint firstItem="xuZ-ww-HXO" firstAttribute="leading" secondItem="Rel-6s-GQo" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="u6w-kJ-IwV"/>
+                            <constraint firstItem="ub2-VY-gdC" firstAttribute="top" secondItem="Rel-6s-GQo" secondAttribute="top" constant="126" id="v3Y-f2-i4s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uGP-vm-qFh"/>
+                    <connections>
+                        <outlet property="fortuneLabel" destination="ub2-VY-gdC" id="lEE-gw-CKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfy-Mf-eMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="-238"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bma-zS-VDc">
+            <objects>
+                <navigationController id="S0F-qe-RoS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpp-s3-uyj">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="RKK-wy-ZAP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGT-Ax-PMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-635" y="-238"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
