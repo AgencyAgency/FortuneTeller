@@ -16,11 +16,18 @@
 
 @implementation AAFortuneVC
 
+- (AAFortuneMaker *)fortuneMaker
+{
+    if (!_fortuneMaker) {
+        _fortuneMaker = [[AAFortuneMaker alloc] init];
+    }
+    return _fortuneMaker;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.fortuneMaker = [[AAFortuneMaker alloc] init];
     self.fortuneLabel.text = [self.fortuneMaker tellFortune];
 }
 
