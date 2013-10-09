@@ -12,6 +12,7 @@
 @interface AAFortuneVC ()
 @property (weak, nonatomic) IBOutlet UILabel *fortuneLabel;
 @property (strong, nonatomic) AAFortuneMaker *fortuneMaker;
+- (IBAction)refreshFortune:(UIBarButtonItem *)sender;
 @end
 
 @implementation AAFortuneVC
@@ -24,11 +25,20 @@
     return _fortuneMaker;
 }
 
+- (void)showNewFortune
+{
+    self.fortuneLabel.text = [self.fortuneMaker tellFortune];
+}
+
+- (IBAction)refreshFortune:(UIBarButtonItem *)sender {
+    [self showNewFortune];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.fortuneLabel.text = [self.fortuneMaker tellFortune];
+    [self showNewFortune];
 }
 
 
