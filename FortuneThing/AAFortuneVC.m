@@ -7,20 +7,20 @@
 //
 
 #import "AAFortuneVC.h"
-#import "AAFortuneMaker.h"
+#import "AABeligerentFortuneMaker.h"
 
 @interface AAFortuneVC ()
 @property (weak, nonatomic) IBOutlet UILabel *fortuneLabel;
-@property (strong, nonatomic) AAFortuneMaker *fortuneMaker;
+@property (strong, nonatomic) AABeligerentFortuneMaker *fortuneMaker;
 - (IBAction)refreshFortune:(UIBarButtonItem *)sender;
 @end
 
 @implementation AAFortuneVC
 
-- (AAFortuneMaker *)fortuneMaker
+- (AABeligerentFortuneMaker *)fortuneMaker
 {
     if (!_fortuneMaker) {
-        _fortuneMaker = [[AAFortuneMaker alloc] init];
+        _fortuneMaker = [[AABeligerentFortuneMaker alloc] init];
     }
     return _fortuneMaker;
 }
