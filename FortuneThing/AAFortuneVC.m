@@ -11,13 +11,13 @@
 
 @interface AAFortuneVC ()
 @property (weak, nonatomic) IBOutlet UILabel *fortuneLabel;
-@property (strong, nonatomic) AABeligerentFortuneMaker *fortuneMaker;
+@property (strong, nonatomic) AAFortuneMaker *fortuneMaker;
 - (IBAction)refreshFortune:(UIBarButtonItem *)sender;
 @end
 
 @implementation AAFortuneVC
 
-- (AABeligerentFortuneMaker *)fortuneMaker
+- (AAFortuneMaker *)fortuneMaker
 {
     if (!_fortuneMaker) {
         _fortuneMaker = [[AABeligerentFortuneMaker alloc] init];
