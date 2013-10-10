@@ -77,7 +77,13 @@
                             <constraint firstItem="ub2-VY-gdC" firstAttribute="top" secondItem="Rel-6s-GQo" secondAttribute="top" constant="126" id="v3Y-f2-i4s"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uGP-vm-qFh"/>
+                    <navigationItem key="navigationItem" id="uGP-vm-qFh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="X9s-gk-8Gn">
+                            <connections>
+                                <action selector="refreshFortunePressed:" destination="LpI-fd-uk1" id="S7w-Kd-ZyX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="fortuneLabel" destination="ub2-VY-gdC" id="lEE-gw-CKe"/>
                     </connections>

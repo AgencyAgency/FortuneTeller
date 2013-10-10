@@ -12,4 +12,5 @@
 
 - (NSString *)tellFortune;
 
+
 @end

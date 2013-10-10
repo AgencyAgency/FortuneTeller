@@ -20,6 +20,7 @@
 		CF7A0D791804B675000DCF4A /* AAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7A0D781804B675000DCF4A /* AAViewController.m */; };
 		CF7A0D811804B6FB000DCF4A /* AAFortuneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7A0D801804B6FB000DCF4A /* AAFortuneVC.m */; };
 		CF7A0D841804B826000DCF4A /* AAFortuneMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7A0D831804B826000DCF4A /* AAFortuneMaker.m */; };
+		CF7A0D9018061DDC000DCF4A /* AABeligerentFortuneMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7A0D8F18061DDC000DCF4A /* AABeligerentFortuneMaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		CF7A0D801804B6FB000DCF4A /* AAFortuneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAFortuneVC.m; sourceTree = "<group>"; };
 		CF7A0D821804B826000DCF4A /* AAFortuneMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAFortuneMaker.h; sourceTree = "<group>"; };
 		CF7A0D831804B826000DCF4A /* AAFortuneMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAFortuneMaker.m; sourceTree = "<group>"; };
+		CF7A0D8E18061DDC000DCF4A /* AABeligerentFortuneMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABeligerentFortuneMaker.h; sourceTree = "<group>"; };
+		CF7A0D8F18061DDC000DCF4A /* AABeligerentFortuneMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AABeligerentFortuneMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				CF7A0D781804B675000DCF4A /* AAViewController.m */,
 				CF7A0D7F1804B6FB000DCF4A /* AAFortuneVC.h */,
 				CF7A0D801804B6FB000DCF4A /* AAFortuneVC.m */,
+				CF7A0D8E18061DDC000DCF4A /* AABeligerentFortuneMaker.h */,
+				CF7A0D8F18061DDC000DCF4A /* AABeligerentFortuneMaker.m */,
 				CF7A0D821804B826000DCF4A /* AAFortuneMaker.h */,
 				CF7A0D831804B826000DCF4A /* AAFortuneMaker.m */,
 				CF7A0D631804B675000DCF4A /* Supporting Files */,
@@ -189,6 +194,7 @@
 				CF7A0D791804B675000DCF4A /* AAViewController.m in Sources */,
 				CF7A0D811804B6FB000DCF4A /* AAFortuneVC.m in Sources */,
 				CF7A0D841804B826000DCF4A /* AAFortuneMaker.m in Sources */,
+				CF7A0D9018061DDC000DCF4A /* AABeligerentFortuneMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +319,7 @@
 				CF7A0D7E1804B675000DCF4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
